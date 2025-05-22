@@ -8,7 +8,6 @@ btnClear.addEventListener("click", clearResults);
 const listResults = document.getElementById('results');
 
 function search() {
-
     const destinationInput = document.getElementById("destination").value.toLowerCase();
     var destinationNormalized = destinationInput.indexOf("beach") > -1 ? "beaches" : destinationInput.indexOf("temple") > -1 ? "temples" :
         destinationInput.indexOf("countr") > -1 ? "countries" : null;
@@ -18,6 +17,7 @@ function search() {
         return;
     }
 
+    clearResults();
     fetch("./travel_recommendation_api.json")
         .then(function (result) {
             return result.json();
@@ -33,7 +33,7 @@ function search() {
 
 function clearResults() {
   listResults.innerHTML = '';
-  document.getElementById("destination").value = '';
+  document.getElementById("destination").value = ''
 }
 
 function addResult(oResult) {
