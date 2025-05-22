@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tiny Travelers</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="header">
+        <div class="headerleft">
+            <img src="https://png.pngtree.com/png-clipart/20241003/original/pngtree-wooden-toy-plane-realistic-glassy-png-image_16176182.png"
+                width="100px" />
+            <h1>Tiny Travelers</h1>
+        </div>
+        <div class="headermiddle">
+            <ul>
+                <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+                <li><a href="./travel_recommendation_about.html" id="about">About Us </a></li>
+                <li><a href="./travel_recommendation_contact.html" id="contact">Contact Us </a></li>
+
+            </ul>
+        </div>
+        <div class="headerright">
+            <li><input type="text" id="destination" placeholder="Enter a destination or keyword"> </li>
+            <li><button id='btnSearch'>Search</button></li>
+            <li><button id='btnClear'>Clear</button></li>
+        </div>
+    </div>
+    <div class="home sidebyside content">
+        <div class="content-wrapper">
+            <div class="content-text">
+                <p class="intro bighomePageLetters">ADVENTURE AWAITS!</p>
+                <p class="intro smallhomePageLetters">Hop on our wooden airplane and let your imagination take flight.
+                    Whether
+                    it’s mountains, beaches, or magical lands, we turn every journey into a playful adventure for
+                    curious young
+                    travelers and their families.</p>
+            </div>
+            <div class="content-right">
+                <ul id="results">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+</body>
+
+</html>

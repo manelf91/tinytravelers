@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+}
+
+div.header {
+    height: 100px;
+    background-color: lab(73.44% 17.59 36.6);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    align-content: center;
+}
+
+.headerleft {
+    display: inline-flex;
+    text-align: left;
+}
+
+.headerleft,
+.headermiddle,
+.headerright {
+    flex: 1;
+    text-align: center;
+}
+
+.headerright {
+    text-align: right;
+}
+
+.header li {
+    display: inline;
+    margin-right: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: #503939;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content {
+    background-image: url("https://cdn.create.vista.com/api/media/medium/31855871/stock-photo-freedom?token=");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.bighomePageLetters {
+    font-size: 120px;
+    width: 50%;
+    font-weight: bold;
+}
+
+.contact .bighomePageLetters {
+    width: 100%;
+}
+
+.smallhomePageLetters {
+    font-size: 20px;
+    text-justify: inter-word;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about .smallhomePageLetters, .home .smallhomePageLetters{
+    width: 1000px;
+}
+
+.content .intro {
+    margin-left: 20px;
+}
+
+.content .inner {
+    margin-left: 60px;
+}
+
+.about .home .content {
+    padding-top: 200px;
+}
+
+.team-photo {
+    width: 40px;
+    height: 40px;
+}
+
+.team-name {
+    font-weight: bold;
+    align-content: center;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.team-member {
+    border: 1px solid gray;
+    position: relative;
+    height: 250px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 10px 50px 50px 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    box-shadow: 0 3px 10px gray;
+}
+
+.team-position {
+    border: 1px solid gray;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 3px 10px gray;
+    background-color: lab(73.44% 17.59 36.6);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 200px;
+    /* adjust as needed */
+}
+
+/* Style the text input */
+#destination {
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 300px;
+    max-width: 90%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#destination:focus {
+    outline: none;
+    border-color: #503939;
+    box-shadow: 0 0 6px rgba(80, 57, 57, 0.5);
+}
+
+/* Style the buttons */
+#btnSearch,
+#btnClear {
+    background-color: lab(73.44% 17.59 36.6);
+    color: #503939;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btnSearch:hover,
+#btnClear:hover {
+    background-color: lab(63% 17.59 36.6);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact .content-right {
+    width: 30%;
+}
+
+.home .content-right {
+    width: 25%;
+}
+
+.content-right label {
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+}
+
+.content-right input,
+.content-right textarea {
+    font-size: 16px;
+    padding: 10px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    resize: vertical;
+}
+
+.content-right input:focus,
+.content-right textarea:focus {
+    outline: none;
+    border-color: #503939;
+    box-shadow: 0 0 5px rgba(80, 57, 57, 0.6);
+}
+
+.content-right textarea {
+    min-height: 100px;
+}
+
+.content-right button {
+    align-self: flex-start;
+    background-color: lab(73.44% 17.59 36.6);
+    color: #503939;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.content-right button:hover {
+    background-color: lab(63% 17.59 36.6);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.contact .content-wrapper {
+  justify-content: space-between;
+}
+
+.destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.destination-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+.destination-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.destination-name {
+  font-size: 22px;
+  margin: 15px 0 10px;
+  color: #503939;
+}
+
+.destination-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.destination-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: hsl(18, 50%, 50%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.destination-button:hover {
+  background-color: hsl(18, 50%, 40%);
+}
